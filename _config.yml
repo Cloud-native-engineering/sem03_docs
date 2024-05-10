@@ -1,0 +1,11 @@
+title: Python-Microservice
+description: "Der Weg zum perfekten URL-Shortener"
+remote_theme: just-the-docs/just-the-docs
+favicon_ico: "/resources/images/favicon.ico"
+
+url: https://cloud-native-engineering.github.io/sem03_docs
+
+aux_links:
+  Projektplanung: https://itcne23.atlassian.net/jira/software/projects/URL
+
+footer_content: "Copyright &copy; 2024 Yves Wetter. Veröffentlicht mit einer <a href=\"https://github.com/Cloud-native-engineering/sem03_docs/tree/main/LICENSE.md\">Creative Commons Attribution-ShareAlike 3.0 Switzerland License</a> Lizenz."

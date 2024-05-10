@@ -1,0 +1,33 @@
+@startuml
+cloud {
+  [GitHub] as github
+  [IDP] as idp
+}
+
+[Dev Machine] as dev
+
+package "Public Cloud" {
+  database "PostgreSQL" as database
+  database "KeyValue-DB" as keyvaluedb
+  database "Queue" as queue
+  
+  [Container Registry] as registry
+
+  node "Microservice" as micro {
+    [API] as api
+    [Web-UI] as web
+    [Redirector] as redirector
+  }
+}
+
+dev --> github
+github -d-> registry : Deploy
+micro --> registry : Pull Images
+web --> database
+web --> api
+web -l-> idp
+api --> database
+api --> queue
+redirector -d-> keyvaluedb
+keyvaluedb -r-> queue
+@enduml
