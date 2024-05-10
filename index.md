@@ -19,6 +19,6 @@ Im heutigen digitalen Zeitalter sind URLs unverzichtbar geworden und dienen als 
 
 **Dokumente:**
 
-- [Einreichungsformular Semesterarbeit](resources/artifacts/20240508_Semesterarbeit03_Einreichungsformuar_Wetter)
+- [Einreichungsformular Semesterarbeit](resources/artifacts/20240508_Semesterarbeit03_Einreichungsformuar_Wetter.pdf)
 
 ![wave](resources/images/footer.svg)
