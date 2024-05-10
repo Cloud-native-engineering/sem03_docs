@@ -10,16 +10,16 @@ nav_order: 1
 
 | **Sprint theme** | Projektstart |
 | :--------------: | ------------ |
-|  **Start date**  | TBD   |
-|   **End date**   | TBD   |
+|  **Start date**  | 10.05.2024   |
+|   **End date**   | 26.05.2024   |
 
 ## Sprint Ziele
 
 - Project Start
-- Define exchange format 2 integrate into AWS
-- Projectmanagement Documentation
-- Deside Camuda Version
-- Start designing Business Process
+- Create RISK Board
+- Create Service Design
+- Define Cloud Provider
+- Define Storage Mechanism
 
 ## Scrum Board
 
