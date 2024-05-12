@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 2.7.2 Backlog Refinement
-parent: 2.7 Sprint 02
+title: 2.8.2 Backlog Refinement
+parent: 2.8 Sprint 02
 grand_parent: 2. Projektorganisation
 nav_order: 2
 ---
 
-# 2.7.2 Backlog Refinement
+# 2.8.2 Backlog Refinement
 
 >TBD

@@ -9,7 +9,7 @@ nav_order: 4
 
 Diese Semesterarbeit wird mit verschieden Tools unterstützt und ergänzt.
 
-## 2.6.1 Jira
+## 2.4.1 Jira
 
 Die Tickets und das Zeitmanagement werden mithilfe von [Jira](https://jira.atlassian.com) von Atlassian verwaltet.
 
@@ -46,18 +46,18 @@ Damit die Tickets immer den gleichen Aufbau haben wurde ein Template erstellt un
 
 </details>
 
-## 2.6.2 GitHub Repository
+## 2.4.2 GitHub Repository
 
 Diese Arbeit wird in Markdown geschrieben. Die Files davon werden in einem Git-Repository in GitHub abgelegt.
 
-## 2.6.3 GitHub Actions
+## 2.4.3 GitHub Actions
 
 [GitHub Actions](https://github.com/features/actions) ist eine CI/CD Lösung von GitHub. Diese ermöglicht dass für die Arbeit eine Pipeline eingesetzt werden kann um die Arbeit zu publizieren.
 
-## 2.6.4 GitHub Pages
+## 2.4.4 GitHub Pages
 
 [GitHub Pages](https://pages.github.com/) ermöglicht, dass diese Arbeit als Website angeschaut werden kann. Zusammengefasst ist es ein einfaches Webhosting für statischen Inhalt.
 
-## 2.6.5 Jekyll
+## 2.4.5 Jekyll
 
 Mit Hilfe von [Jekyll](https://jekyllrb.com/) werden die Markdown Files in html umgewandelt und ein Theme hinzugefügt. Somit für das ganze UI der Website wurde mit Jekyll gemacht.
