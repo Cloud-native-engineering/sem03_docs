@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 2.7.3 Sprint Review
-parent: 2.7 Sprint 02
+title: 2.8.3 Sprint Review
+parent: 2.8 Sprint 02
 grand_parent: 2. Projektorganisation
 nav_order: 3
 ---
 
-# 2.7.3 Sprint Review
+# 2.8.3 Sprint Review
 
 ## Review Sprint Ziele
 
@@ -18,7 +18,7 @@ nav_order: 3
 
 ## Status Project Board
 
-![2024_Projektplanung_Sprint01](../../../resources/images/2024_Projektplanung_Sprint02.png)
+![2024_Projektplanung_Sprint02](../../../resources/images/2024_Projektplanung_Sprint02.png)
 
 | **Total Tickets** | **Abgeschlossene Tickets** | **Nicht abgeschlossene Tickets** | **Prozentsatz** |
 | :---------------: | -------------------------- | -------------------------------- | --------------- |
