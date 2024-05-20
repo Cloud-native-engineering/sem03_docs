@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 3.5 Datenmodell
+title: 3.4 Datenmodell
 parent: 3. Service Design
-nav_order: 5
+nav_order: 4
 ---
 
 # 3.4 Datenmodell
