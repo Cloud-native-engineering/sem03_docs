@@ -35,6 +35,6 @@ Um die Qualität des Service sicherzustellen, behält sich der Service Provider 
 
 ## API Blueprint
 
-Für weitere Details und spezifische Anleitungen, siehe die vollständige API-Dokumentation:
+Die API-Spezifikationen wurden sorgfältig mit dem [API Blueprint](https://apiblueprint.org/) erstellt, einem leistungsstarken Design-Tool, das für die Erstellung von API-Dokumentationen verwendet wird. Für weitere Details und spezifische Anleitungen, siehe die vollständige API-Dokumentation:
 
-{% include apidocs.html %}
+- [API Spezifikation](../../resources/artifacts/apidocs.html)
