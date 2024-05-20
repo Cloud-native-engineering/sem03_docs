@@ -7,7 +7,7 @@ cloud {
 [Dev Machine] as dev
 
 package "Public Cloud" {
-  database "PostgreSQL" as database
+  database "Database" as database
   database "KeyValue-DB" as keyvaluedb
   database "Queue" as queue
   
@@ -23,11 +23,10 @@ package "Public Cloud" {
 dev --> github
 github -d-> registry : Deploy
 micro --> registry : Pull Images
-web --> database
 web --> api
-web -l-> idp
+web -r-> idp
 api --> database
-api --> queue
+api --> queue : Publish
+queue <-- redirector : Consume
 redirector -d-> keyvaluedb
-keyvaluedb -r-> queue
 @enduml

@@ -13,3 +13,7 @@ nav_order: 6
 - GitHub - (2024.05.10), docs.github.com, [Dokumentation GitHub Actions](https://docs.github.com/en/actions)
 - Jekyll - (2024.05.10), jekyllrb.com, [Dokumentation Jekyll](https://jekyllrb.com/docs/)
 - GitHub - (2024.05.10), github.com, [Using GitHub Actions Secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions)
+- microservices.io - (2024.05.12), microservices.io, [Microservice Architecture](https://microservices.io/)
+- Atlassian - (2024.05.12), atlassian.com, [Microservice Architecture](https://www.atlassian.com/microservices/microservices-architecture)
+- RedHat - (2024.05.12), developers.redhat.com, [5 design principles for microservices](https://developers.redhat.com/articles/2022/01/11/5-design-principles-microservices#)
+- Auth0 - (2024.05.17), auth0.com, [Solution Overview (SPAs + API)](https://auth0.com/docs/get-started/architecture-scenarios/spa-api/part-1)

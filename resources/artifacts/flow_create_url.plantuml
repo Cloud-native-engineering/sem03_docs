@@ -1,0 +1,21 @@
+@startuml
+participant Browser
+participant SPA as "Single Page App"
+participant Auth0
+participant BackendAPI
+participant Database as db
+participant "Message Queue" as Queue
+participant lambda as "Lambda Function"
+participant keyvalue as "Keyvalue-DB"
+
+Browser -> SPA: Anmeldung
+SPA -> Auth0: Authentifizierung
+Auth0 --> SPA: Token zurück
+Browser -> SPA: Erstellt neue gekürzte URL
+SPA -> BackendAPI: Neue URL an Backend senden
+BackendAPI -> db: URL in Datenbank speichern
+BackendAPI -> Queue: URL in Message Queue stellen
+Queue -> lambda: Message aus Queue verarbeiten
+lambda -> keyvalue: Daten in Keyvalue-DB schreiben
+
+@enduml

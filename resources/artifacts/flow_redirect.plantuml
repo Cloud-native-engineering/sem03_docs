@@ -1,0 +1,18 @@
+@startuml
+participant Browser
+participant api as "API-Gateway"
+participant lambda as "Lambda Function"
+participant keyvalue as "Keyvalue-DB"
+
+Browser -> api: Zugriff auf shortcore /<code>
+api -> lambda: Trigger Lambda Function
+lambda -> keyvalue: Lookup URL in Keyvalue-DB
+keyvalue --> lambda: URL-Daten zurück
+lambda -> lambda: URL verified?
+alt URL verified
+    lambda -> Browser: Redirect zur Ziel-URL
+else URL not verified
+    lambda -> Browser: Info Page anzeigen
+end
+
+@enduml

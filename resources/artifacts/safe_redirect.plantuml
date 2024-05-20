@@ -1,0 +1,12 @@
+@startuml
+start
+
+if (Is verified?) then (yes)
+  :Direct redirect;
+else (no)
+  :Safe redirect
+   The a Info-Page will be prompted;
+endif
+
+stop
+@enduml
