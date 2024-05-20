@@ -1,0 +1,36 @@
+@startuml
+
+entity Person {
+    * person_id : INT <<PK, AUTO_INCREMENT>>
+    --
+    first_name : VARCHAR(50)
+    last_name : VARCHAR(50)
+    city : VARCHAR(50)
+}
+
+entity Hobby {
+    * hobby_id : INT <<PK, AUTO_INCREMENT>>
+    --
+    hobby_name : VARCHAR(50)
+}
+
+entity Car {
+    * car_id : INT <<PK, AUTO_INCREMENT>>
+    --
+    person_id : INT <<FK>>
+    manufacturer : VARCHAR(50)
+    year : INT
+    value : DECIMAL(10, 2)
+    state : VARCHAR(50)
+}
+
+entity PersonHobby {
+    * person_id : INT <<FK>>
+    * hobby_id : INT <<FK>>
+}
+
+Person ||--o{ Car : owns
+Person ||--o{ PersonHobby : participates in
+Hobby ||--o{ PersonHobby : includes
+
+@enduml
