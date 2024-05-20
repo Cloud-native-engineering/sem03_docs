@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 3.3 Architektur und Technologie
+title: 3.5 Architektur und Technologie
 parent: 3. Service Design
-nav_order: 3
+nav_order: 5
 ---
 
-# 3.3 Architektur und Technologie
+# 3.5 Architektur und Technologie
 
 In der Semesterarbeit kommen eine Vielzahl von Tools und Technologien zum Einsatz.
 

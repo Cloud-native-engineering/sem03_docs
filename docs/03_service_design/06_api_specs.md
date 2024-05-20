@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 3.4 API-Spezifikation
+title: 3.6 API-Spezifikation
 parent: 3. Service Design
-nav_order: 4
+nav_order: 6
 ---
 
-# 3.4 API-Spezifikation
+# 3.6 API-Spezifikation
 
 Dieses Dokument enthält die technischen Spezifikationen und Anleitungen zur Nutzung unserer API. Das Backend-API soll alle Usecases abdecken, damit die URLs verwaltet werden können. Alle Endpunkte versehen die Create/Update/Delete funtktionen.
 
