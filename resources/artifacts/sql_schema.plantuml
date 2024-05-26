@@ -36,7 +36,7 @@ entity RestrictedUrl {
     is_blocked : BOOLEAN
 }
 
-User ||--o{ UserShortUrl : creates
-UserShortUrl }o--|| ShortUrl : is created by
+User ||--o{ ManagedUrl : creates
+ManagedUrl }o--|| ShortUrl : is created by
 
 @enduml
