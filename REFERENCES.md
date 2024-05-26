@@ -18,3 +18,4 @@ nav_order: 6
 - RedHat - (2024.05.12), developers.redhat.com, [5 design principles for microservices](https://developers.redhat.com/articles/2022/01/11/5-design-principles-microservices#)
 - Auth0 - (2024.05.17), auth0.com, [Solution Overview (SPAs + API)](https://auth0.com/docs/get-started/architecture-scenarios/spa-api/part-1)
 - API Blueprint - (20.05.2024), apiblueprint.org, [api blueprint](https://apiblueprint.org/)
+- Amazon Web Services - (20.05.2024), docs.aws.amazon.com, [Pass sensitive data to ECS container](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html)

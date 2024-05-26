@@ -5,7 +5,7 @@ entity User {
     --
     auth0_id : VARCHAR(50)
     username : VARCHAR(50)
-    enabled: BOOLEAN
+    is_enabled: BOOLEAN
 }
 
 entity ShortUrl {
@@ -15,16 +15,16 @@ entity ShortUrl {
     original_url : VARCHAR(255)
     creation_date : DATETIME
     expiration_date : DATETIME
-    enabled: BOOLEAN
-    verified: BOOLEAN
+    is_enabled: BOOLEAN
+    is_verified: BOOLEAN
 }
 
-entity UserShortUrl {
+entity ManagedUrl {
     * user_url_id : INT <<PK, AUTO_INCREMENT>>
     --
     user_id : INT <<FK>>
     url_id : INT <<FK>>
-    description : VARCHAR(255)
+    is_owner : BOOLEAN
 }
 
 entity RestrictedUrl {
