@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 2.7.5 Sprint Retro
+title: 2.7.5 Riskboard Meeting
 parent: 2.7 Sprint 01
 grand_parent: 2. Projektorganisation
 nav_order: 5
