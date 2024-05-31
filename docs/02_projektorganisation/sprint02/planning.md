@@ -15,7 +15,12 @@ nav_order: 1
 
 ## Sprint Ziele
 
->TBD
+- Deploy Cloud Infrastructure
+- MVPs
+  - BackendAPI
+  - Redirector (+ Queue2DB)
+  - SPA
+- Add Input from SME
 
 ## Scrum Board
 
