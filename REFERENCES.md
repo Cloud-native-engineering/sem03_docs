@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 6. Literaturverzeichnis 
-nav_order: 6
+title: 8. Literaturverzeichnis 
+nav_order: 8
 ---
 
-# 6. Literaturverzeichnis
+# 8. Literaturverzeichnis
 
 - Scale Agile Framework - (2024.05.10), scaledagileframework.com, [Zusammenfassung Business Owner](https://scaledagileframework.com/business-owners/)
 - Scale Agile Framework - (2024.05.10), scaledagileframework.com, [Zusammenfassung Product Owner](https://scaledagileframework.com/product-owner/)

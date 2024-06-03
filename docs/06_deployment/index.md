@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 4. Services
-nav_order: 4
+title: 6. Deployment
+nav_order: 6
 has_children: true
 ---
 
-# 4. Services
+# 6. Deployment
 
 {: .no_toc }
