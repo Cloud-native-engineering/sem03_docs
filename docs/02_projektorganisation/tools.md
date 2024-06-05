@@ -61,3 +61,7 @@ Diese Arbeit wird in Markdown geschrieben. Die Files davon werden in einem Git-R
 ## 2.4.5 Jekyll
 
 Mit Hilfe von [Jekyll](https://jekyllrb.com/) werden die Markdown Files in html umgewandelt und ein Theme hinzugefügt. Somit für das ganze UI der Website wurde mit Jekyll gemacht.
+
+## 2.4.6 GitHub Packages
+
+Die Container-Images werden auf [GitHub Packages](https://github.com/features/packages) publiziert.
