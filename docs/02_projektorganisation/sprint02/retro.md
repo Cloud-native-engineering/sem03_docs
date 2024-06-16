@@ -12,15 +12,17 @@ Im Sprint Retro wird über der vergangene Sprint repetiert. Es bietet die Mögli
 
 ## Keep / Beibehalten
 
->TBD
+- Sauberes und motiviertes Arbeiten
+- Hohe Qualität an der Semesterarbeit
 
 ## Drop / Stopp
 
->TBD
+- keine
 
 ## Try / Ausprobieren
 
->TBD
+- SPA
+  - Build Variablen um zum Beispiel die Backend-API-URI Variabel anpassen zu können
 
 ---
 
