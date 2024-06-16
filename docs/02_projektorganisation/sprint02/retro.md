@@ -24,8 +24,3 @@ Im Sprint Retro wird über der vergangene Sprint repetiert. Es bietet die Mögli
 - SPA
   - Build Variablen um zum Beispiel die Backend-API-URI Variabel anpassen zu können
 
----
-
-## Sprint Reflexion
-
->TBD
