@@ -15,7 +15,16 @@ nav_order: 1
 
 ## Sprint Ziele
 
-> TBD
+- Sprint 02 Leftovers
+- Erstellen der Präsentation
+- Fertigstellung
+  - Rechtschreibung prüfen
+  - Arbeit Publizieren (Web & MS-Teams)
+- Product Enhancement
+  - SPA
+  - Redirector
+  - Datahandler
+  - API
 
 ## Scrum Board
 
