@@ -14,12 +14,14 @@ Dies ist der letzte Sprint und die Semesterarbeit/Projekt ist somit abgeschlosse
 
 ## Keep / Beibehalten
 
->TBD
+- Hohe Qualität
+- Sauberes Arbeiten
+- Motivierte Arbeitsweise
 
 ## Drop / Stopp
 
->TBD
+- keine
 
 ## Try / Ausprobieren
 
->TBD
+- keine

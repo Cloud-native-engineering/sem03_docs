@@ -18,4 +18,4 @@ Folgende Schritte sind dazu notwendig:
 3. Deploy Changes auf dem ECS-Cluster
    1. ![ecs_update_3](../../resources/images/ecs_update_3.png)
    1. ![ecs_update_4](../../resources/images/ecs_update_4.png)
-4. Warten und zuschauen, wie zurest ein neuer Container gestartet wird und nach und nach das Loadbalancer Backend gewechselt wird.
+4. Warten und zuschauen, wie zuerst ein neuer Container gestartet wird und nach und nach das Loadbalancer Backend gewechselt wird.
