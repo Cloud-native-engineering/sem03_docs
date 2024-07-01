@@ -9,7 +9,7 @@ nav_order: 5
 
 In der Semesterarbeit kommen eine Vielzahl von Tools und Technologien zum Einsatz.
 
-![2024_BigPicture](../../resources/images/2024_sem03_bigpicture.svg)
+![2024_BigPicture](../../resources/images/sem03_bigpicture.svg)
 
 ## Cloud Services
 
