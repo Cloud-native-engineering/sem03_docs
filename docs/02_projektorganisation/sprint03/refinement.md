@@ -12,4 +12,6 @@ Während dem Backlog Refinement wurde auf das Backlog geschaut, Ticket erstellt 
 
 ## Anpassungen
 
->TBD
+Ein Ticket wurde erstellt, nachdem ein Fachexperte im MS-Teams eine Rückmeldung zum aktuellen Projektstand gegeben hat.
+
+- [URL-84](https://itcne23.atlassian.net/browse/URL-84)

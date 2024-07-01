@@ -66,7 +66,7 @@ Folgender Ansible Code kann verwendet werden, um den Application Loadbalancer zu
             SslPolicy: ELBSecurityPolicy-2015-05
             DefaultActions:
               - Type: forward
-                  TargetGroupName: myurl-prod-app
+                TargetGroupName: myurl-prod-app
             Rules:
               - Priority: 10000
                 Conditions:
@@ -152,6 +152,7 @@ Die SQS-Queue wurde mit einfachen standard Settings deployed. Dazu kann folgende
 DynamoDB ist die Serverless NoSQL Datenbank. Sie zeichnet ihre schnelle lese und schreibrate aus. Genau so schnell kann eine DyamoDB-Table erstellt werden.
 
 ```yaml
+---
 - name: Provision DynamoDB
   hosts: localhost
   become: false
