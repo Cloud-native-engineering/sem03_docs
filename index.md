@@ -9,7 +9,7 @@ permalink: /
 
 Im heutigen digitalen Zeitalter sind URLs unverzichtbar geworden und dienen als Tor zu einer Fülle von Informationen im Internet. Allerdings gestaltet es sich oft mühsam, lange URLs mit anderen Personen zu teilen, was zu einer schlechten Benutzererfahrung führen kann. Um dieses Problem zu lösen und das lästige Abtippen langer URLs der Vergangenheit anzugehören, zielt diese Semesterarbeit darauf ab, einen funktionsfähigen Prototypen von Design bis zur Umsetzung zu entwickeln. Dabei werden Herausforderungen wie Hochverfügbarkeit, Skalierbarkeit, Datenspeicherung, Sicherheit und weitere relevante Aspekte gelöst, um einen optimalen URL-Shortener zu schaffen.
 
-![coverImage](resources/images/2024_sem03_bigpicture.svg)
+![coverImage](resources/images/sem03_bigpicture.svg)
 
 ## Ziele:
 
