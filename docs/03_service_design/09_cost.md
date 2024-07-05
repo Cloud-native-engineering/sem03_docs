@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 3.8 Servicekosten
+title: 3.9 Servicekosten
 parent: 3. Service Design
-nav_order: 8
+nav_order: 9
 ---
 
-# 3.8 Servicekosten
+# 3.9 Servicekosten
 
 In diesem Abschnitt werden die Kosten analysiert, die mit dem Betrieb des URL-Shortener in einer produktiven Umgebung verbunden sind. Während der Entwicklungsphase wird der Service im AWS Student-Lab gehostet und aufgebaut.
 

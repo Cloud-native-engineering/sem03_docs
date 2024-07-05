@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 5.1 Schutzbedarfsanalyse
-parent: 5. Security
-nav_order: 1
+title: 3.8 Schutzbedarfsanalyse
+parent: 3. Service Design
+nav_order: 8
 ---
 
-# 5.1 Schutzbedarfsanalyse
+# 3.8 Schutzbedarfsanalyse
 
 Der MyURL-Service ist ein URL-Shortener, der als Microservice entwickelt wurde. Er verwendet Auth0 als Identity Provider (IDP), Amazon Elastic Container Service (ECS), Simple Queue Service (SQS), Lambda-Funktionen, DynamoDB und RDS PostgreSQL. Die Schutzbedarfsanalyse für diesen Service umfasst die folgenden Aspekte:
 

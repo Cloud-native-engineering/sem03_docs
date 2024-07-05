@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 6.1 Cloud Provisioning
-parent: 6. Deployment
+title: 5.1 Cloud Provisioning
+parent: 5. Deployment
 nav_order: 1
 ---
 
-# 6.1 Cloud Provisioning
+# 5.1 Cloud Provisioning
 
 Das Provisioning-Prozess war in diesem Fall etwas eingeschränkt und beinhaltete einige manuelle Schritte. Der Hauptgrund dafür liegt in den Beschränkungen des Academy Labs. In dieser Umgebung können Tools wie Terraform und Ansible nur bedingt oder sehr eingeschränkt verwendet werden. Ein wesentliches Hindernis besteht darin, dass keine IAM-Rollen und IAM-Benutzer erstellt werden können. Insbesondere wurde das Projekt mit dem Ziel entwickelt, eine Microservice-Plattform bereitzustellen. Für einen Proof of Concept (POC) ist diese teilweise Automatisierung vollkommen ausreichend.
 
