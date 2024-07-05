@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 9. Literaturverzeichnis 
-nav_order: 9
+title: 8. Literaturverzeichnis 
+nav_order: 8
 ---
 
 # 8. Literaturverzeichnis

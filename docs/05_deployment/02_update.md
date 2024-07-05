@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 6.2 Version Upgrade
-parent: 6. Deployment
+title: 5.2 Version Upgrade
+parent: 5. Deployment
 nav_order: 2
 ---
 
-# 6.2 Version Upgrade
+# 5.2 Version Upgrade
 
 Um eine neue Version zu deployen, ist es erforderlich, über die GitHub-Actions Pipeline ein neues Container-Image zu erstellen. Dabei ist der definierte Prozess mit Branch-Protections zu beachten. Nach erfolgreichem Durchlauf der Pipeline wird automatisch ein neues Image-Tag erstellt. Dieses Tag muss anschließend im Task-Template aktualisiert und zum Abschluss deployed werden.
 

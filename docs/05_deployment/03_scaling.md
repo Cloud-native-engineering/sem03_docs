@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 6.3 Skalierung
-parent: 6. Deployment
+title: 5.3 Skalierung
+parent: 5. Deployment
 nav_order: 3
 ---
 
-# 6.3 Skalierung
+# 5.3 Skalierung
 
 Um das volle Potenzial von Microservices auszuschöpfen, ist eine angemessene Skalierung unerlässlich. Es gibt verschiedene Strategien, die für die Skalierung angewendet werden können.
 
