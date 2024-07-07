@@ -1,0 +1,152 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "CloudFormation template to create MyURL-api ecs task-definition",
+    "Parameters": {
+      "ECSClusterName": {
+        "Type": "String",
+        "Default": "myurl-prod"
+      },
+      "ECSServiceName": {
+        "Type": "String",
+        "Default": "myurl-api"
+      },
+      "SecurityGroupIDs": {
+        "Type": "CommaDelimitedList",
+        "Default": "sg-ecs"
+      },
+      "SubnetIDs": {
+        "Type": "CommaDelimitedList",
+        "Default": "subnet-VZA,subnet-VZB,subnet-VZC"
+      },
+      "VpcID": {
+        "Type": "String",
+        "Default": "vpc-XXX"
+      },
+      "LoadBalancerName": {
+        "Type": "String",
+        "Default": "myurl-prod"
+      }
+    },
+    "Resources": {
+      "ECSService": {
+        "Type": "AWS::ECS::Service",
+        "Properties": {
+          "Cluster": "myurl-prod",
+          "CapacityProviderStrategy": [
+            {
+              "CapacityProvider": "FARGATE",
+              "Base": 0,
+              "Weight": 1
+            }
+          ],
+          "TaskDefinition": "arn:aws:ecs:us-east-1:XXX:task-definition/myurl-api:1",
+          "ServiceName": "myurl-api",
+          "SchedulingStrategy": "REPLICA",
+          "DesiredCount": 1,
+          "LoadBalancers": [
+            {
+              "ContainerName": "myurl-api",
+              "ContainerPort": 5000,
+              "LoadBalancerName": {
+                "Ref": "AWS::NoValue"
+              },
+              "TargetGroupArn": {
+                "Ref": "TargetGroup"
+              }
+            }
+          ],
+          "NetworkConfiguration": {
+            "AwsvpcConfiguration": {
+              "AssignPublicIp": "ENABLED",
+              "SecurityGroups": {
+                "Ref": "SecurityGroupIDs"
+              },
+              "Subnets": {
+                "Ref": "SubnetIDs"
+              }
+            }
+          },
+          "PlatformVersion": "LATEST",
+          "DeploymentConfiguration": {
+            "MaximumPercent": 200,
+            "MinimumHealthyPercent": 100,
+            "DeploymentCircuitBreaker": {
+              "Enable": true,
+              "Rollback": true
+            }
+          },
+          "DeploymentController": {
+            "Type": "ECS"
+          },
+          "ServiceConnectConfiguration": {
+            "Enabled": false
+          },
+          "Tags": [],
+          "EnableECSManagedTags": true
+        },
+        "DependsOn": [
+          "Listener"
+        ]
+      },
+      "TargetGroup": {
+        "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
+        "Properties": {
+          "HealthCheckPath": "/docs#/",
+          "Name": "ecs-myurl-prod-api",
+          "Port": 80,
+          "Protocol": "HTTP",
+          "TargetType": "ip",
+          "HealthCheckProtocol": "HTTP",
+          "VpcId": "vpc-XXX",
+          "TargetGroupAttributes": [
+            {
+              "Key": "deregistration_delay.timeout_seconds",
+              "Value": "300"
+            }
+          ]
+        }
+      },
+      "Listener": {
+        "Type": "AWS::ElasticLoadBalancingV2::Listener",
+        "Properties": {
+          "DefaultActions": [
+            {
+              "Type": "forward",
+              "TargetGroupArn": {
+                "Ref": "TargetGroup"
+              }
+            }
+          ],
+          "LoadBalancerArn": "arn:aws:elasticloadbalancing:us-east-1:XXX:loadbalancer/app/myurl-prod/XXX",
+          "Port": 80,
+          "Protocol": "HTTP"
+        }
+      }
+    },
+    "Outputs": {
+      "ClusterName": {
+        "Description": "The cluster used to create the service.",
+        "Value": {
+          "Ref": "ECSClusterName"
+        }
+      },
+      "ECSService": {
+        "Description": "The created service.",
+        "Value": {
+          "Ref": "ECSService"
+        }
+      },
+      "Listener": {
+        "Description": "The created listener.",
+        "Value": {
+          "Ref": "Listener"
+        }
+      },
+      "TargetGroup": {
+        "Description": "The created target group.",
+        "Value": {
+          "Ref": "TargetGroup"
+        }
+      }
+    }
+  }

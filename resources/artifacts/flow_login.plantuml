@@ -1,0 +1,49 @@
+@startuml
+participant Browser
+participant SPA as "Single Page App"
+participant Auth0
+participant BackendAPI
+
+Browser ->> SPA: Request Login
+activate SPA
+SPA ->> Auth0: Redirect to Auth0 for Login
+deactivate SPA
+
+activate Auth0
+Auth0 ->> Browser: Login Page
+deactivate Auth0
+
+activate Browser
+Browser ->> Auth0: User Credentials
+deactivate Browser
+
+activate Auth0
+Auth0 ->> Auth0: Authenticate User
+alt Successful Login
+  Auth0 ->> Browser: Redirect to SPA with Access Token
+else Login Failed
+  Auth0 ->> Browser: Error Message
+end
+deactivate Auth0
+
+activate Browser
+Browser ->> SPA: Redirected with Access Token
+deactivate Browser
+
+activate SPA
+SPA ->> BackendAPI: Access Resource (Authorization Header with Access Token)
+deactivate SPA
+
+activate BackendAPI
+BackendAPI ->> Auth0: Validate Access Token
+alt Valid Token
+  BackendAPI ->> SPA: Grant Access to Resources
+else Invalid Token
+  BackendAPI ->> SPA: Unauthorized Error
+end
+deactivate BackendAPI
+
+activate SPA
+SPA ->> Browser: Display User Data/Content
+deactivate SPA
+@enduml

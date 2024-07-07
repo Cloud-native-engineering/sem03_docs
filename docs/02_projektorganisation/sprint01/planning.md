@@ -1,25 +1,25 @@
 ---
 layout: default
-title: 2.6.1 Sprint Planning 
-parent: 2.6 Sprint 01
+title: 2.7.1 Sprint Planning 
+parent: 2.7 Sprint 01
 grand_parent: 2. Projektorganisation
 nav_order: 1
 ---
 
-# 2.6.1 Sprint Planning
+# 2.7.1 Sprint Planning
 
 | **Sprint theme** | Projektstart |
 | :--------------: | ------------ |
-|  **Start date**  | TBD   |
-|   **End date**   | TBD   |
+|  **Start date**  | 10.05.2024   |
+|   **End date**   | 26.05.2024   |
 
 ## Sprint Ziele
 
 - Project Start
-- Define exchange format 2 integrate into AWS
-- Projectmanagement Documentation
-- Deside Camuda Version
-- Start designing Business Process
+- Create RISK Board
+- Create Service Design
+- Define Cloud Provider
+- Define Storage Mechanism
 
 ## Scrum Board
 

@@ -1,0 +1,311 @@
+FORMAT: 1A
+
+# URL Shortener API
+
+This is the API documentation for the URL Shortener API. The API allows users to create short URLs, share them with other users, and restrict access to certain URLs.
+
+# Group Users
+
+## User Collection [/users]
+
+### Create a User [POST]
+
++ Request (application/json)
+
+    + Attributes
+        + auth0_id: auth0|123456 (string, required) - The Auth0 ID of the user
+        + username: superman (string, required) - The username of the user
+
++ Response 201 (application/json)
+
+    + Attributes
+        + user_id: 1 (number, required) - The ID of the created user
+
+### List All Users [GET]
+
++ Response 200 (application/json)
+
+    + Attributes (array)
+        + (object)
+            + user_id: 1 (number, required) - The ID of the user
+            + auth0_id: auth0|123456 (string, required) - The Auth0 ID of the user
+            + username: superman (string, required) - The username of the user
+            + enabled: true (boolean, required) - Whether the user is enabled
+
+## User Entity [/users/{user_id}]
+
+### Retrieve a User [GET]
+
++ Parameters
+    + user_id: 1 (number, required) - The ID of the user
+
++ Response 200 (application/json)
+
+    + Attributes
+        + user_id: 1 (number, required) - The ID of the user
+        + auth0_id: auth0|123456 (string, required) - The Auth0 ID of the user
+        + username: superman (string, required) - The username of the user
+        + enabled: true (boolean, required) - Whether the user is enabled
+
+### Update a User [PATCH]
+
++ Parameters
+    + user_id: 1 (number, required) - The ID of the user
+
++ Request (application/json)
+
+    + Attributes
+        + auth0_id: auth0|123456 (string, optional) - The Auth0 ID of the user
+        + username: superman (string, optional) - The username of the user
+        + enabled: true (boolean, optional) - Whether the user is enabled
+
++ Response 200 (application/json)
+
+    + Attributes
+        + user_id: 1 (number, required) - The ID of the user
+        + auth0_id: auth0|123456 (string, required) - The Auth0 ID of the user
+        + username: superman (string, required) - The username of the user
+        + enabled: true (boolean, required) - Whether the user is enabled
+
+### Delete a User [DELETE]
+
++ Parameters
+    + user_id: 1 (number, required) - The ID of the user
+
++ Response 200 (application/json)
+
+    + Attributes
+        + user_id: 1 (number, required) - The ID of the user
+        + auth0_id: auth0|123456 (string, required) - The Auth0 ID of the user
+        + username: superman (string, required) - The username of the user
+        + enabled: true (boolean, required) - Whether the user is enabled
+
+## User-URL Entity [/users/{user_id}/urls]
+
+### Retrieve URLs from user [GET]
+
++ Parameters
+    + user_id: 1 (number, required) - The ID of the user
+
++ Response 200 (application/json)
+    + Attributes (array)
+        + (object)
+            + url_id: 1 (number, required) - The ID of the short URL
+            + short_code: abc123 (string, required) - The short code of the URL
+            + original_url: http://example.com (string, required) - The original URL to be shortened
+            + creation_date: 2022-01-01T00:00:00Z (string, required) - The creation date of the short URL
+            + expiration_date: 2023-01-01T00:00:00Z (string, required) - The expiration date of the short URL
+            + enabled: true (boolean, required) - Whether the short URL is enabled 
+            + verified: true (boolean, required) - Whether the short URL is verified
+
+### Remove URL from user [DELETE]
+
++ Parameters
+    + user_id: 1 (number, required) - The ID of the user
+
++ Request (application/json)
+    
+        + Attributes
+            + url_id: 1 (number, required) - The ID of the short URL
+
++ Response 200 (application/json)
+
+# Group Short URLs
+
+## Short URL Collection [/urls]
+
+### Create a Short URL [POST]
+
++ Request (application/json)
+
+    + Attributes
+        + short_code: abc123 (string, required) - The short code of the URL
+        + original_url: http://example.com (string, required) - The original URL to be shortened
+        + creation_date: 2022-01-01T00:00:00Z (string, required) - The creation date of the short URL
+        + expiration_date: 2023-01-01T00:00:00Z (string, required) - The expiration date of the short URL
+        + enabled: true (boolean, required) - Whether the short URL is enabled
+
++ Response 201 (application/json)
+
+    + Attributes
+        + url_id: 1 (number, required) - The ID of the created short URL
+
+### List All URL [GET]
+
++ Response 200 (application/json)
+
+    + Attributes (array)
+        + (object)
+            + short_code: abc123 (string, required) - The short code of the URL
+            + original_url: http://example.com (string, required) - The original URL to be shortened
+            + creation_date: 2022-01-01T00:00:00Z (string, required) - The creation date of the short URL
+            + expiration_date: 2023-01-01T00:00:00Z (string, required) - The expiration date of the short URL
+            + enabled: true (boolean, required) - Whether the short URL is enabled 
+            + verified: true (boolean, required) - Whether the short URL is verified
+
+
+## Short URL Entity [/urls/{url_id}]
+
+Main functionality of the API is to create, update, delete and retrieve short URLs.
+
+### Retrieve a Short URL [GET]
+
++ Parameters
+    + url_id: 1 (number, required) - The ID of the short URL
+
++ Response 200 (application/json)
+
+    + Attributes
+        + url_id: 1 (number, required) - The ID of the short URL
+        + short_code: abc123 (string, required) - The short code of the URL
+        + original_url: http://example.com (string, required) - The original URL
+        + creation_date: 2022-01-01T00:00:00Z (string, required) - The creation date of the short URL
+        + expiration_date: 2023-01-01T00:00:00Z (string, required) - The expiration date of the short URL
+        + enabled: true (boolean, required) - Whether the short URL is enabled
+        + verified: true (boolean, required) - Whether the short URL is verified
+
+### Update a Short URL [PATCH]
+
++ Parameters
+    + url_id: 1 (number, required) - The ID of the short URL
+
++ Request (application/json)
+        + Attributes
+            + short_code: abc123 (string, optional) - The short code of the URL
+            + original_url: http://example.com (string, optional) - The original URL
+            + expiration_date: 2023-01-01T00:00:00Z (string, optional) - The expiration date of the short URL
+            + enabled: true (boolean, optional) - Whether the short URL is enabled
+            + verified: true (boolean, optional) - Whether the short URL is verified
+
++ Response 200 (application/json)
+
+    + Attributes
+        + url_id: 1 (number, required) - The ID of the short URL
+        + short_code: abc123 (string, required) - The short code of the URL
+        + original_url: http://example.com (string, required) - The original URL
+        + creation_date: 2022-01-01T00:00:00Z (string, required) - The creation date of the short URL
+        + expiration_date: 2023-01-01T00:00:00Z (string, required) - The expiration date of the short URL
+        + enabled: true (boolean, required) - Whether the short URL is enabled
+        + verified: true (boolean, required) - Whether the short URL is verified
+
+### Delete a Short URL [DELETE]
+
++ Parameters
+    + url_id: 1 (number, required) - The ID of the short URL
+
++ Response 200 (application/json)
+
+    + Attributes
+        + url_id: 1 (number, required) - The ID of the short URL
+        + short_code: abc123 (string, required) - The short code of the URL
+        + original_url: http://example.com (string, required) - The original URL
+        + creation_date: 2022-01-01T00:00:00Z (string, required) - The creation date of the short URL
+        + expiration_date: 2023-01-01T00:00:00Z (string, required) - The expiration date of the short URL
+        + enabled: true (boolean, required) - Whether the short URL is enabled
+        + verified: true (boolean, required) - Whether the short URL is verified
+
+## URL-User Entity [/urls/{url_id}/users]
+
+### Retrieve Users that have access to the URL [GET]
+
++ Parameters
+    + url_id: 1 (number, required) - The ID of the short URL
+
++ Response 200 (application/json)
+    
+        + Attributes (array)
+            + (object)
+                + user_id: 1 (number, required) - The ID of the user
+                + username: superman (string, required) - The username of the user
+
+### Share a Short URL [POST]
+
++ Parameters
+    + url_id: 1 (number, required) - The ID of the short URL
+
++ Request (application/json)
+
+        + Attributes
+            + user_id: 1 (number, required) - The ID of the user
+
++ Response 201 (application/json)
+
+# Group Restricted URLs
+## Restricted URL Collection [/restricted-urls]
+
+### List All Restricted URLs [GET]
+
++ Response 200 (application/json)
+
+    + Attributes (array)
+        + (object)
+            + restricted_url_id: 1 (number, required) - The ID of the restricted URL
+            + short_code: abc123 (string, required) - The short code of the URL
+            + domain: example.com (string, required) - The domain of the URL
+            + is_premium: false (boolean, required) - Whether the URL is premium
+            + is_blocked: true (boolean, required) - Whether the URL is blocked
+
+### Create a Restricted URL [POST]
+
++ Request (application/json)
+
+    + Attributes
+        + short_code: abc123 (string) - The short code of the URL
+        + domain: example.com (string) - The domain of the URL
+        + is_premium: false (boolean, required) - Whether the URL is premium
+        + is_blocked: true (boolean, required) - Whether the URL is blocked
+
++ Response 201 (application/json)
+
+    + Attributes
+        + restricted_url_id: 1 (number, required) - The ID of the created restricted URL
+
+## Restricted URL Entity [/restricted-urls/{restricted_url_id}]
+
+### Retrieve a Restricted URL [GET]
+
++ Parameters
+    + restricted_url_id: 1 (number, required) - The ID of the restricted URL
+
++ Response 200 (application/json)
+
+    + Attributes
+        + restricted_url_id: 1 (number, required) - The ID of the restricted URL
+        + short_code: abc123 (string, required) - The short code of the URL
+        + domain: example.com (string, required) - The domain of the URL
+        + is_premium: false (boolean, required) - Whether the URL is premium
+        + is_blocked: true (boolean, required) - Whether the URL is blocked
+
+### Update a Restricted URL [PATCH]
+
++ Parameters
+    + restricted_url_id: 1 (number, required) - The ID of the restricted URL
+
++ Request (application/json)
+    
++ Attributes
+    + short_code: abc123 (string) - The short code of the URL
+    + domain: example.com (string) - The domain of the URL
+    + is_premium: false (boolean, optional) - Whether the URL is premium
+    + is_blocked: true (boolean, optional) - Whether the URL is blocked
+
++ Response 200 (application/json)
+
+    + Attributes
+        + restricted_url_id: 1 (number, required) - The ID of the restricted URL
+        + short_code: abc123 (string, required) - The short code of the URL
+        + domain: example.com (string, required) - The domain of the URL
+        + is_premium: false (boolean, required) - Whether the URL is premium
+        + is_blocked: true (boolean, required) - Whether the URL is blocked
+
+### Delete a Restricted URL [DELETE]
++ Parameters
+    + restricted_url_id: 1 (number, required) - The ID of the restricted URL
+
++ Response 200 (application/json)
++ Attributes
+    + restricted_url_id: 1 (number, required) - The ID of the restricted URL
+    + short_code: abc123 (string, required) - The short code of the URL
+    + domain: example.com (string, required) - The domain of the URL
+    + is_premium: false (boolean, required) - Whether the URL is premium
+    + is_blocked: true (boolean, required) - Whether the URL is blocked

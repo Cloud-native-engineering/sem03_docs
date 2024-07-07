@@ -4,7 +4,7 @@
 
 Im heutigen digitalen Zeitalter sind URLs unverzichtbar geworden und dienen als Tor zu einer Fülle von Informationen im Internet. Allerdings gestaltet es sich oft mühsam, lange URLs mit anderen Personen zu teilen, was zu einer schlechten Benutzererfahrung führen kann. Um dieses Problem zu lösen und das lästige Abtippen langer URLs der Vergangenheit anzugehören, zielt diese Semesterarbeit darauf ab, einen funktionsfähigen Prototypen von Design bis zur Umsetzung zu entwickeln. Dabei werden Herausforderungen wie Hochverfügbarkeit, Skalierbarkeit, Datenspeicherung, Sicherheit und weitere relevante Aspekte gelöst, um einen optimalen URL-Shortener zu schaffen.
 
-![2024_coverImage](resources/images/2024_Sem03_CoverImage.svg)
+![coverImage](resources/images/sem03_bigpicture.svg)
 
 ## Inhaltsverzeichnis
 
@@ -18,39 +18,41 @@ Im heutigen digitalen Zeitalter sind URLs unverzichtbar geworden und dienen als 
 
 [2.3 SWOT Analyse](docs/02_projektorganisation/swot.md)
 
-[2.4 GIT Branching Konzept](docs/02_projektorganisation/git_branching_konzept.md)
+[2.4 Tools & Software](docs/02_projektorganisation/management.md)
 
-[2.5 Tools & Software](docs/02_projektorganisation/management.md)
+[2.5 GIT Branching Konzept](docs/02_projektorganisation/git_branching_konzept.md)
 
-[2.6 Sprint 01](docs/02_projektorganisation/sprint01/index.md)
+[2.6 Risikomanagement](docs/02_projektorganisation/risk_management.md)
 
-[2.6.1 Sprint Planning](docs/02_projektorganisation/sprint01/planning.md)
+[2.7 Sprint 01](docs/02_projektorganisation/sprint01/index.md)
 
-[2.6.2 Backlog Refinement](docs/02_projektorganisation/sprint01/refinement.md)
+[2.7.1 Sprint Planning](docs/02_projektorganisation/sprint01/planning.md)
 
-[2.6.3 Sprint Review](docs/02_projektorganisation/sprint01/review.md)
+[2.7.2 Backlog Refinement](docs/02_projektorganisation/sprint01/refinement.md)
 
-[2.6.4 Sprint Retro](docs/02_projektorganisation/sprint01/retro.md)
+[2.7.3 Sprint Review](docs/02_projektorganisation/sprint01/review.md)
 
-[2.7 Sprint 02](docs/02_projektorganisation/sprint02/index.md)
+[2.7.4 Sprint Retro](docs/02_projektorganisation/sprint01/retro.md)
 
-[2.7.1 Sprint Planning](docs/02_projektorganisation/sprint02/planning.md)
+[2.8 Sprint 02](docs/02_projektorganisation/sprint02/index.md)
 
-[2.7.2 Backlog Refinement](docs/02_projektorganisation/sprint02/refinement.md)
+[2.8.1 Sprint Planning](docs/02_projektorganisation/sprint02/planning.md)
 
-[2.7.3 Sprint Review](docs/02_projektorganisation/sprint02/review.md)
+[2.8.2 Backlog Refinement](docs/02_projektorganisation/sprint02/refinement.md)
 
-[2.7.4 Sprint Retro](docs/02_projektorganisation/sprint02/retro.md)
+[2.8.3 Sprint Review](docs/02_projektorganisation/sprint02/review.md)
 
-[2.8 Sprint 03](docs/02_projektorganisation/sprint03/index.md)
+[2.8.4 Sprint Retro](docs/02_projektorganisation/sprint02/retro.md)
 
-[2.8.1 Sprint Planning](docs/02_projektorganisation/sprint03/planning.md)
+[2.9 Sprint 03](docs/02_projektorganisation/sprint03/index.md)
 
-[2.8.2 Backlog Refinement](docs/02_projektorganisation/sprint03/refinement.md)
+[2.9.1 Sprint Planning](docs/02_projektorganisation/sprint03/planning.md)
 
-[2.8.3 Sprint Review](docs/02_projektorganisation/sprint03/review.md)
+[2.9.2 Backlog Refinement](docs/02_projektorganisation/sprint03/refinement.md)
 
-[2.8.4 Sprint Retro](docs/02_projektorganisation/sprint03/retro.md)
+[2.9.3 Sprint Review](docs/02_projektorganisation/sprint03/review.md)
+
+[2.9.4 Sprint Retro](docs/02_projektorganisation/sprint03/retro.md)
 
 [3. Service Design](docs/03_service_design/index.md)
 

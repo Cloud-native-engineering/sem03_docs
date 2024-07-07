@@ -1,0 +1,42 @@
+@startuml
+
+entity User {
+    * user_id : INT <<PK, AUTO_INCREMENT>>
+    --
+    auth0_id : VARCHAR(50)
+    username : VARCHAR(50)
+    is_enabled: BOOLEAN
+}
+
+entity ShortUrl {
+    * url_id : INT <<PK, AUTO_INCREMENT>>
+    --
+    short_code : VARCHAR(50)
+    original_url : VARCHAR(255)
+    creation_date : DATETIME
+    expiration_date : DATETIME
+    is_enabled: BOOLEAN
+    is_verified: BOOLEAN
+}
+
+entity ManagedUrl {
+    * user_url_id : INT <<PK, AUTO_INCREMENT>>
+    --
+    user_id : INT <<FK>>
+    url_id : INT <<FK>>
+    is_owner : BOOLEAN
+}
+
+entity RestrictedUrl {
+    * restricted_url_id : INT <<PK, AUTO_INCREMENT>>
+    --
+    short_code : VARCHAR(50)
+    domain : VARCHAR(255)
+    is_premium : BOOLEAN
+    is_blocked : BOOLEAN
+}
+
+User ||--o{ ManagedUrl : creates
+ManagedUrl }o--|| ShortUrl : is created by
+
+@enduml

@@ -1,12 +1,12 @@
 ---
 layout: default
-title: 2.7.1 Sprint Planning
-parent: 2.7 Sprint 02
+title: 2.8.1 Sprint Planning
+parent: 2.8 Sprint 02
 grand_parent: 2. Projektorganisation
 nav_order: 1
 ---
 
-# 2.7.1 Sprint Planning
+# 2.8.1 Sprint Planning
 
 | **Sprint theme** | FlowCraft  |
 | :--------------: | ---------- |
@@ -15,7 +15,12 @@ nav_order: 1
 
 ## Sprint Ziele
 
->TBD
+- Deploy Cloud Infrastructure
+- MVPs
+  - BackendAPI
+  - Redirector (+ Queue2DB)
+  - SPA
+- Add Input from SME
 
 ## Scrum Board
 
