@@ -23,11 +23,11 @@ nav_order: 3
 
 | **Total Tickets** | **Abgeschlossene Tickets** | **Nicht abgeschlossene Tickets** | **Prozentsatz** |
 | :---------------: | -------------------------- | -------------------------------- | --------------- |
-|        TBD        | TBD                        | TBD                              | 100%            |
+|        13         | 13                         | 0                                | 100%            |
 
 | **Total Storypoints** | **Abgeschlossene Storypoints** | **Nicht abgeschlossene Storypoints** | **Prozentsatz** |
 | :-------------------: | ------------------------------ | ------------------------------------ | --------------- |
-|          TBD          | TBD                            | TBD                                  | 100%            |
+|         16.5          | 16.5                           | 0                                    | 100%            |
 
 ## Anpassungen am Projekt?
 
