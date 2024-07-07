@@ -24,9 +24,9 @@ Diese Cloud Ressourcen dienen als Grundlage von diesem Deployment. Ein IAM-Berec
 
 Der ECS Cluster mit seinen Task-Definitionen kann mit folgenden Cloud-Formation Template deployed werden:
 
-- [MyURL - ECS Cluster](../../resources/artifacts/myurl_ecs_cloudformation.json)
-- [MyURL - ECS Task myurl_api](../../resources/artifacts/myurl_ecs_task_api.json)
-- [MyURL - ECS Task myurl_app](../../resources/artifacts/myurl_ecs_task_app.json)
+- [MyURL - ECS Cluster](../../resources/templates/myurl_ecs_cloudformation.json)
+- [MyURL - ECS Task myurl_api](../../resources/templates/myurl_ecs_task_api.json)
+- [MyURL - ECS Task myurl_app](../../resources/templates/myurl_ecs_task_app.json)
 
 ## Application Loadbalancer
 
