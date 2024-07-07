@@ -10,24 +10,24 @@ nav_order: 3
 
 ## Review Sprint Ziele
 
-| **Sprint Ziel** | **Status** |
-| --------------- | ---------- |
-| TBD             | ???%       |
-| TBD             | ???%       |
-| TBD             | ???%       |
-| TBD             | ???%       |
+| **Sprint Ziel**            | **Status** |
+| -------------------------- | ---------- |
+| Sprint 02 Leftovers        | 100%       |
+| Erstellen der Präsentation | 100%       |
+| Final steps                | 100%       |
+| Produkt Enhancement        | 100%       |
 
 ## Status Project Board
 
-![2024_Projektplanung_Sprint03](../../../resources/images/2024_Projektplanung_Sprint03.png)
+![Burndown_Sprint03](../../../resources/images/Burndown_Sprint03.png)
 
 | **Total Tickets** | **Abgeschlossene Tickets** | **Nicht abgeschlossene Tickets** | **Prozentsatz** |
 | :---------------: | -------------------------- | -------------------------------- | --------------- |
-|        TBD        | TBD                        | TBD                              | TBD             |
+|        TBD        | TBD                        | TBD                              | 100%            |
 
 | **Total Storypoints** | **Abgeschlossene Storypoints** | **Nicht abgeschlossene Storypoints** | **Prozentsatz** |
 | :-------------------: | ------------------------------ | ------------------------------------ | --------------- |
-|          TBD          | TBD                            | TBD                                  | TBD             |
+|          TBD          | TBD                            | TBD                                  | 100%            |
 
 ## Anpassungen am Projekt?
 
@@ -37,7 +37,7 @@ Es werden keine Anpassungen am Projekt vorgenommen, da das Projekt beendet wird.
 
 Die Semesterarbeit wurde erfolgreich abgeschlossen. Hinsichtlich des zeitlichen Ablaufs waren in diesem Sprint keine grösseren Anpassungen notwendig. Alle Aufgaben konnten ohne Zeitdruck durchgeführt und abgeschlossen werden.
 
-Eine detaillierte Reflexion über die Semesterarbeit finden Sie [hier](../../05_fazit/index.md).
+Eine detaillierte Reflexion über die Semesterarbeit finden Sie [hier](../../07_fazit/index.md).
 
 ---
 

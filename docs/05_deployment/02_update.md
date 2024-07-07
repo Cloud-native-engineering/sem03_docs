@@ -7,7 +7,7 @@ nav_order: 2
 
 # 5.2 Version Upgrade
 
-Um eine neue Version zu deployen, ist es erforderlich, über die GitHub-Actions Pipeline ein neues Container-Image zu erstellen. Dabei ist der definierte Prozess mit Branch-Protections zu beachten. Nach erfolgreichem Durchlauf der Pipeline wird automatisch ein neues Image-Tag erstellt. Dieses Tag muss anschließend im Task-Template aktualisiert und zum Abschluss deployed werden.
+Um eine neue Version zu deployen, ist es erforderlich, über die GitHub-Actions Pipeline ein neues Container-Image zu erstellen. Dabei ist der definierte Prozess mit Branch-Protections zu beachten. Nach erfolgreichem Durchlauf der Pipeline wird automatisch ein neues Image-Tag erstellt. Dieses Tag muss anschliessend im Task-Template aktualisiert und zum Abschluss deployed werden.
 
 Folgende Schritte sind dazu notwendig:
 
