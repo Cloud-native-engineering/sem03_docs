@@ -1,0 +1,32 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sem03-docs
+  title: "sem03-docs"
+  description: "Documentation for the MyURL project"
+  tags:
+    - docs
+    - myurl
+    - aws
+  owner: Yves
+  links:
+    - url: https://cloud-native-engineering.github.io/sem03_docs
+      title: Documentation Site
+    - url: https://github.com/Cloud-native-engineering/sem03_docs
+      title: GitHub Repository
+spec:
+  type: documentation
+  owner: Yves
+  lifecycle: production
+  system: myurl
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: myurl
+  title: "MyURL"
+  description: "The fastest url-shortener in the world"
+  owner: Yves
+spec:
+  owner: Yves
+  domain: default
